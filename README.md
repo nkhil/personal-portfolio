@@ -1,4 +1,4 @@
-# Nikhil Vijayan's Personal Portfolio
+# My Personal Portfolio Project
 
 2018 draft of my personal portfolio website.
 
