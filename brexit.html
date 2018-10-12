@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Brexit Means Breadsticks Chrome Extension</title>
+</head>
+<body>
+
+<div class="project__container">
+  <div class="project__parallaxContainer">
+    <div class="button-left"><a href="/">Back to the homepage</a></div>
+    
+    <h1>Brexit means Breadsticks</h1>
+    <p>Political statements aside, this was a fun project that put my JS skills to test. </p>
+    <p>Made using <span class="yellow">JavaScript</span>.</p>
+    <div class="chevron-down"></div>
+    
+  </div>
+
+ <div class="project__content__container">
+   <div class="project__content">
+     
+    <div class="project__content__grid__container">
+      <div class="project__content__grid__image">
+        <img src="img/brexit.png" alt="UK Bank Holidays Preview">
+      </div>
+      <div class="project__content__grid__text">
+        <h3>Word replacement Chrome Extention</h3>
+        <p>This extension is available for install on the Chrome store, and has gotten quite a few downloads due to its popularity on social media. </p>
+        
+        <button><a href="https://github.com/nkhil/Brexit_means_Breadsticks" target="_blank">View on Github</a></button>
+        <button><a href="https://chrome.google.com/webstore/detail/brexit-means-breadsticks/okbmmlhhebmgpjgjhffamejlcgclpkkh?hl=en-GB" target="_blank">View on Chrome store</a></button>
+
+      </div>
+    </div>
+    <div class="project__content__text">
+    <h2>Making a word replacement Chrome Extension</h2>
+      <p>
+          This was a bit trickier to accomplish than I'd thought, as the code has to work on all pages, including pages like google search results. I wrote some code that seemed to work, but I soon found out that it interrupted YouTube and other web apps as it was stripping pages of eventListeners - not ideal!       
+      </p>
+
+      <p>
+          The easy part was selecting all the elements, turning it into an array (using the ES6 spread method) and running a forEach to look through every element. What wasn't instantly obvious was that I had to run another forEach method nested within the first one to look through all the child nodes as the first loop was only running on the outside of the elements, not the children of the elements. Another learning was the use of the nodeType property to find out the type of data it contained (a nodeType of 3 indicates text).
+      </p>
+
+      <p>
+          I separated out the text replacement as its own separate function so I (or somebody else for that matter) could customise the code easily to replace other words and phrases. 
+      </p>
+
+      <p>
+          I should mention that I also learned how Chrome extensions work, and I plan to use this to strip existing styling, and insert my own stylings for specific selected domains. 
+      </p>
+
+    <h2>Here is the working code for the extension</h2>
+
+      <p>
+          <script src="https://gist.github.com/nkhil/befbaa8a9722e92db091f47a66fde7ca.js"></script>
+      </p>
+        
+    </div> <!-- text container ends here-->
+      <div class="project__footer__container">
+          <!-- <img src="img/hello.png" alt=""> -->
+          <div class="project__footer__text">
+            <h4>Looking for a front-end developer?</h4>
+            <p>Are you looking for a developer who has</p>
+              <ul>
+                <li>A passion for creating beautiful, usable interfaces</li>
+                <li>Awareness for the importance of writing clean code that others can understand</li>
+                <li>A proven track record of delivering on high profile projects</li>
+                <li>A strong understanding of core marketing principles like SEO and conversion</li>
+                <li>A solid record of soft skills backed by references</li>
+              </ul>
+            <button class="button-cta">Check out my GitHub</button>
+            <button class="button-cta">Download my CV</button>
+            <button class="button-cta">Email me</button>
+            <!-- <div><button class="button-cta">Email me: hello@nikhilvijayan.com</button></div> -->
+          </div>
+        
+      </div>
+      
+        <h2>Here are some of my other projects</h2>
+      
+      <!-- Work card image right starts here -->
+      <div class="work__gridleft">
+
+          <div class="gridleft__image">
+            <img class="responsive" src="img/components.png" alt="">
+          </div>
+          <div class="gridleft__text">
+            <h3>Showcase: Components</h3>
+            <p>Here is a collection of website components from popular websites written from scratch.</p>
+
+            <button><a href="">Read more</a></button>
+          </div>
+
+        </div>
+        <!-- work card image right ends -->
+   </div>
+ </div>
+</div>
+<!-- project__container ends here -->
+
+
+
+</body>
+</html>

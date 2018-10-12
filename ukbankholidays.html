@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Project</title>
+</head>
+<body>
+
+<div class="project__container">
+  <div class="project__parallaxContainer">
+    <div class="button-left"><a href="/">Back to the homepage</a></div>
+    
+    <h1>Upcoming UK Bank Holidays</h1>
+    <p>Using the fetch() api to get and display upcoming bank holidays</p>
+    <p>Made using <span class="yellow">JavaScript</span> and <span class="yellow">SASS</span>.</p>
+    <div class="chevron-down"></div>
+    
+  </div>
+
+ <div class="project__content__container">
+   <div class="project__content">
+     
+    <div class="project__content__grid__container">
+      <div class="project__content__grid__image">
+        <img src="img/ukbankholidays.png" alt="UK Bank Holidays Preview">
+      </div>
+      <div class="project__content__grid__text">
+        <h3>When is the next bank holiday? </h3>
+        <p>I purchased the whenisthenextbankholiday.co.uk domain to display the upcoming bank holidays. </p>
+        
+        <button><a href="https://github.com/nkhil/UK-bank-holidays-using-fetch-API" target="_blank">View on Github</a></button>
+        <button><a href="http://whenisthenextbankholiday.co.uk/" target="_blank">Visit the website</a></button>
+
+      </div>
+    </div>
+    <div class="project__content__text">
+    <h2>Working with the fetch API</h2>
+      <p>
+            This was the second time ever I was working with API data, more importantly, it taught me a few things! The objective of this project was writing the JavaScript code, so I've kept the design of the site fairly simple. All I have on the page is an H1 headline, with an empty 'ul' tag, where the data is injected. 
+      </p>
+
+    <h2>Using the .map() method</h2>
+
+    <p>
+            The map method is one of my favourite methods to use (I'm not sure why). It processes the original array and produces a new array so as to not mutate the original one. I used map to return my event names and dates inside li tags, as that's where this data is being injected into. I added a new class to the date elements to visually differentiate it from the event names. 
+    </p>
+
+    <h2>Only displaying dates in the future</h2>
+      
+    <p>
+            Everything is taking place on the client side in this case, and in order to only display bank holidays in the future, I used the 'new Date()' method, and then deriving the month, day and year from it (I had to do this, as the date format in the JSON is in YYYY-MM-DD format). 
+    </p>
+    <h2>Using 'Date.parse()'</h2>
+    <p>
+        I used Date.parse() to compare 'today' (i.e. whenever the page is loaded on the client side) with the dates in the array that was returned, and used an IF statement to only pass those events into the map() method. 
+    </p>
+
+    <h2>Here's the code being used</h2>
+
+    <p>
+            <script src="https://gist.github.com/nkhil/d3ac32bb4385602f4d79300b8300963e.js"></script>
+    </p>
+        
+    </div> <!-- text container ends here-->
+      <div class="project__footer__container">
+          <!-- <img src="img/hello.png" alt=""> -->
+          <div class="project__footer__text">
+            <h4>Looking for a front-end developer?</h4>
+            <p>Are you looking for a developer who has</p>
+              <ul>
+                <li>A passion for creating beautiful, usable interfaces</li>
+                <li>Awareness for the importance of writing clean code that others can understand</li>
+                <li>A proven track record of delivering on high profile projects</li>
+                <li>A strong understanding of core marketing principles like SEO and conversion</li>
+                <li>A solid record of soft skills backed by references</li>
+              </ul>
+            <button class="button-cta">Check out my GitHub</button>
+            <button class="button-cta">Download my CV</button>
+            <button class="button-cta">Email me</button>
+            <!-- <div><button class="button-cta">Email me: hello@nikhilvijayan.com</button></div> -->
+          </div>
+        
+      </div>
+      
+        <h2>Here are some of my other projects</h2>
+      
+      <!-- Work card image right starts here -->
+      <div class="work__gridleft">
+
+          <div class="gridleft__image">
+            <img class="responsive" src="img/components.png" alt="">
+          </div>
+          <div class="gridleft__text">
+            <h3>Showcase: Components</h3>
+            <p>Here is a collection of website components from popular websites written from scratch.</p>
+
+            <button><a href="">Read more</a></button>
+          </div>
+
+        </div>
+        <!-- work card image right ends -->
+   </div>
+ </div>
+</div>
+<!-- project__container ends here -->
+
+
+
+</body>
+</html>

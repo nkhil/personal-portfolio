@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Nikhil Vijayan Personal Portfolio</title>
+</head>
+<body>
+
+<div class="project__container">
+  <div class="project__parallaxContainer">
+    <div class="button-left"><a href="/">Back to the homepage</a></div>
+    
+    <h1>Personal portfolio site</h1>
+    <p>Expressing my personality and showcasing my design and CSS/SASS skills while keeping things simple. </p>
+    <p>Made using <span class="yellow">SASS</span>, <span class="yellow">CSS Grid</span>, <span class="yellow">Flexbox</span> and <span class="yellow">JavaScript</span>.</p>
+    <div class="chevron-down"></div>
+    
+  </div>
+
+ <div class="project__content__container">
+   <div class="project__content">
+     
+    <div class="project__content__grid__container">
+      <div class="project__content__grid__image">
+        <img src="img/portfolio.png" alt="UK Bank Holidays Preview">
+      </div>
+      <div class="project__content__grid__text">
+        <h3>Fully responsive personal website</h3>
+        <p>This was an excellent learning experience and made me realise the importance of organisation, and thinking through the smaller details (like the favicon being used). </p>
+        
+        <button><a href="https://github.com/nkhil/Brexit_means_Breadsticks" target="_blank">View on Github</a></button>
+
+      </div>
+    </div>
+    <div class="project__content__text">
+    <h2>The importance of organisation</h2>
+      <p>
+          Working on nikhilvijayan.com highlihted the importance of organising my code in a sensible and modular way to be able to re-use elements, while also maintaining the ability to customise the code.     
+      </p>
+
+      <p>
+          The objective of the site was to keep things simple on the front-end, which is often not the easiest thing to accomplish. I decided on using containers with different backgrounds to visually differentiate sections. These sections are also separated into separate SASS files for ease (this has already saved me hours as locating bugs is easier) while using modular mixins for grid items, containers and typography. 
+      </p>
+
+      <p>
+          The site uses CSS Grid and Flexbox for the 'My Work' section, which makes it much easier to make responsive using @media queries and changing the order of the elements. 
+      </p>
+
+      <p>
+          I'm also a fan of using @mixins in my SASS in order to make the code more declarative and readable. For eg: @include for-phone-only {} is much more readable than '@media (max-width: 599px) {}'
+      </p>
+
+    
+        
+    </div> <!-- text container ends here-->
+      <div class="project__footer__container">
+          <!-- <img src="img/hello.png" alt=""> -->
+          <div class="project__footer__text">
+            <h4>Looking for a front-end developer?</h4>
+            <p>Are you looking for a developer who has</p>
+              <ul>
+                <li>A passion for creating beautiful, usable interfaces</li>
+                <li>Awareness for the importance of writing clean code that others can understand</li>
+                <li>A proven track record of delivering on high profile projects</li>
+                <li>A strong understanding of core marketing principles like SEO and conversion</li>
+                <li>A solid record of soft skills backed by references</li>
+              </ul>
+            <button class="button-cta">Check out my GitHub</button>
+            <button class="button-cta">Download my CV</button>
+            <button class="button-cta">Email me</button>
+            <!-- <div><button class="button-cta">Email me: hello@nikhilvijayan.com</button></div> -->
+          </div>
+        
+      </div>
+      
+        <h2>Here are some of my other projects</h2>
+      
+      <!-- Work card image right starts here -->
+      <div class="work__gridleft">
+
+          <div class="gridleft__image">
+            <img class="responsive" src="img/components.png" alt="">
+          </div>
+          <div class="gridleft__text">
+            <h3>Showcase: Components</h3>
+            <p>Here is a collection of website components from popular websites written from scratch.</p>
+
+            <button><a href="">Read more</a></button>
+          </div>
+
+        </div>
+        <!-- work card image right ends -->
+   </div>
+ </div>
+</div>
+<!-- project__container ends here -->
+
+
+
+</body>
+</html>
