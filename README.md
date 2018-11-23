@@ -1,4 +1,4 @@
-# My Personal Portfolio Project
+# Personal portfolio site
 
 ## Website is now live at http://nikhilvijayan.com
 
