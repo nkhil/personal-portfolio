@@ -1,0 +1,189 @@
+.work__bg {
+    @include bg(#fff);
+  }
+  
+  .work__container{
+    @include container;
+  
+    .work__h2{
+      @include headline;
+      font-size: 3rem;
+      color: rgba(black, 1);
+      margin-top: 3rem;
+      // margin-top: 5rem;
+    }
+  
+    .work__p {
+      @include paragraph;
+      color: rgba(black, 1);
+      font-size: 1.4rem;
+    }
+
+    
+  }
+
+  // New Grid layout starts here
+
+    .work__grid-new {
+      margin-top: 4rem;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, 330px);
+      grid-template-rows: auto;
+      justify-content: space-around;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+
+      @include for-tablet-portrait-up {
+        justify-content: center;
+        grid-gap: 50px;
+        // background-color: red;
+      }
+    }
+
+    .work__grid-new__item {
+      justify-self: center;
+      text-align: left;
+      background-color: rgba(#fff, 1);
+      margin: 0.5rem 0;
+      position: relative;
+      border-radius: 5px;
+      border: 1px solid rgb(213, 213, 213);
+
+      &:hover {
+        box-shadow: 10px 10px 50px 20px rgba(0,0,0,.1);
+        cursor: pointer;
+      }
+
+      img {
+        border-radius: 5px 5px 0px 0px;
+      }
+
+      h3 {
+        @include headline;
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+      
+      }
+      p {
+        @include paragraph;
+        color: black;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+        // padding: 0 0.8rem;
+      }
+
+      button {
+        @include grid-button(black, white, '\f0a9');
+        // border: 1px solid white;
+        margin-top: auto;
+        margin-left: 1rem;
+        // display: inline-block;
+        // align-self: flex-start;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+  // New Grid layout ends here
+  
+  .work__gridleft {
+    @include grid-module;
+  
+    .gridleft__image {
+      @include grid-image(1, end);
+  
+      @include for-phone-only {
+        @include grid-image(1, center);
+      }
+
+      img {
+        @include grid-img;
+      }
+    }
+  
+    .gridleft__text {
+      @include grid-text(2, end);
+  
+  
+      h3 {
+        @include headline;
+        @include grid-heading;
+      }
+      p {
+        @include paragraph;
+        @include grid-paragraph;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      button {
+        @include grid-button(black, white, '\f0a9');  
+        margin-left: 0;
+      }
+    } //gridleft__text
+  } // work__gridleft
+  
+  .work__gridright {
+    @include grid-module;
+  
+    .gridright__image {
+      @include grid-image(2, start);
+  
+      @include for-phone-only {
+        @include grid-image(1, center);
+      }
+  
+      img {
+        @include grid-img;
+      }
+    }
+  
+    .gridright__text {
+      @include grid-text(1, end);
+  
+      @include for-phone-only {
+        @include grid-text(2, end);
+      }
+  
+      h3 {
+        @include headline;
+        @include grid-heading;
+      }
+      p {
+        @include paragraph;
+        @include grid-paragraph;
+  
+        &.small {
+          font-size: 0.9rem;
+        }
+      
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      button {
+        @include grid-button(black, white, '\f0a9');
+        margin-left: 0;
+      }
+    } //gridleft__text
+  } // work__gridleft

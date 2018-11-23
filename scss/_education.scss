@@ -1,0 +1,46 @@
+
+.education__bg {
+    @include bg(#eef2fa);
+}
+
+.education__container {
+    @include container;
+
+    h2{
+        @include headline;
+        font-size: 3rem;
+        color: black;
+        margin-top: 3rem;
+    }
+
+    .education__text {
+        text-align: left;
+
+        h3 {
+            @include headline;
+            font-size: 1.8rem;
+            margin-top: 4rem;
+        }
+
+        h4 {
+            @include headline;
+            font-size: 1.5rem;
+            
+        }
+
+        p {
+            @include paragraph;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 1rem;
+        }
+
+        ul {
+            @include paragraph;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 1rem 4rem;
+            list-style-type: square;
+        }
+    }
+}

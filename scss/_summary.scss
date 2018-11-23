@@ -1,0 +1,95 @@
+
+.summary__bg {
+    // @include bg(#323232);
+    @include bg(#000);
+    // background: #4240a9;
+    // background: #673AB7;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  .summary__container {
+    @include container;
+    margin-top: 5rem;
+  
+    a {
+      @include grid-button(yellow, black, '\f0a9');
+      text-align: center;
+      margin: auto;
+  
+    }
+    h3 {
+      @include headline;
+      font-size: 2rem;
+      color: white;
+      margin: 4rem 0;
+    }
+  }
+  
+  h2.summary__h2{
+    @include headline;
+    font-size: 3rem;
+    color: #eee; 
+    margin-top: 3rem;   
+  }
+  
+  p.summary__p {
+    @include paragraph;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+  
+  .summary__languages-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto fill;
+    margin-bottom: 3rem;
+  
+    h3.summary__h3 {
+      @include headline;
+      font-size: 1.4rem;
+      color: white;
+    }
+  
+    
+  }
+  
+  .react::before {
+    @include icons('/img/react.png');
+  }
+  
+  .css3::before {
+    @include icons('/img/css3.png');
+  }
+  
+  .css-flexbox::before {
+    @include icons('/img/css-flexbox.png');
+  }
+  
+  .css-grid::before {
+    @include icons('/img/css-grid.png');
+  }
+  
+  .sass::before {
+    @include icons ('/img/sass.png');
+  }
+  
+  .javascript::before {
+    @include icons ('/img/javascript.png');
+  }
+
+  .git::before {
+    @include icons ('/img/git.png');
+  }
+
+  .gulp::before {
+    @include icons ('/img/gulp.png');
+  }
+
+  .webpack::before {
+    @include icons ('/img/webpack.png');
+  }
+  

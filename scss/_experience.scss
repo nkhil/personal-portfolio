@@ -1,0 +1,62 @@
+
+.experience__bg {
+    background: #fff;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.experience__container {
+    @include container;
+    
+
+    h2{
+        @include headline;
+        font-size: 3rem;
+        color: black;
+        margin-top: 3rem;
+    }
+
+    p {
+        @include paragraph;
+        font-size: 1.4rem;
+    }
+
+    .experience__text {
+        text-align: left;
+
+        h3 {
+            @include headline;
+            font-size: 1.8rem;
+            margin-top: 4rem;
+
+            a {
+                color: black;
+                text-decoration: none;
+                border-bottom: 3px solid blue;
+
+                &:visited {
+                    color: black;
+                    text-decoration: none;
+                    border-bottom: 3px solid blue;
+                }
+                
+            }
+        }
+        p {
+            @include paragraph;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 1rem;
+
+           
+        }
+
+        ul {
+            @include paragraph;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 1rem 4rem;
+            list-style-type: square;
+        }
+    }
+}

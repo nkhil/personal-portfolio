@@ -1,0 +1,58 @@
+
+.links__bg {
+    @include bg(black);
+}
+
+.links__container {
+    @include container;
+
+    h2 {
+        @include headline;
+        font-size: 3rem;
+        color: white;
+        margin-top: 3rem;
+        
+    }
+
+    p {
+        @include paragraph;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 1.8;
+
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom-style: solid;
+            border-bottom-color: white;
+            border-bottom-width: 2px;
+        }
+    }
+
+   
+
+    .links__button__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        @include grid-button(#4444ab, black, '');
+        text-align: center;
+        margin: 2rem 1rem;   
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+    
+        a {
+            color: black;
+            text-decoration: none;
+    
+            &:hover {
+                color: black;
+                text-decoration: none;
+            }
+        }
+      }
+}

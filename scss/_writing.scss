@@ -1,0 +1,60 @@
+.writing__bg {
+    @include bg(#fff);
+}
+
+.writing__container {
+    @include container;
+    h2{
+        @include headline;
+        font-size: 3rem;
+        color: black;
+        margin-top: 3rem;
+    }
+    .writing__content {
+
+        // text-align: left;
+    
+        p {
+            @include paragraph;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            margin-bottom: 5rem;
+        }
+    
+        h4 {
+            @include headline;
+            font-size: 1.9rem;
+            line-height: 2;
+        }
+
+        .post {
+            padding: 20px;
+            margin: 3rem 0;
+            border-radius: 5px;
+            box-shadow: 10px 10px 50px 20px rgba(0,0,0,.1);
+            transition: 0.5ms;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 10px 10px 60px 30px rgba(0,0,0,.1);
+                transform: scale(1.01);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                // text-decoration: underline;
+            }
+
+            // &::after {
+            //     content: '\f35d';
+            //     font-family: 'FontAwesome';
+            //     // font-weight: normal;
+            // }
+        }
+    }
+    
+}

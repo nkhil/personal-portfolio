@@ -1,0 +1,39 @@
+// Imports are here
+@import 'typography';
+@import 'reset';
+@import 'mixins';
+@import 'index';
+@import 'project';
+@import 'work';
+@import 'summary';
+@import 'experience';
+@import 'education';
+@import 'writing';
+@import 'links';
+@import 'footer';
+@import url('https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// Main styles start here
+html, body {
+  height: 100%;
+  background-color: #fff;
+}
+
+
+
+.button-left {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  @include grid-button-left(black, white, '\f0a8');
+  text-align: center;
+  margin: 1rem;
+}
+
+.button-right {
+  @include grid-button(black, white, '\f0a9');
+  text-align: center;
+  margin: 1rem;   
+}
+

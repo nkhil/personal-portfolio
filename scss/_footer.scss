@@ -1,0 +1,18 @@
+
+.footer__bg {
+    @include bg(black);
+}
+
+.footer__container {
+    @include container;
+    margin: 0;
+    font-size: 0.8rem;
+    color: pink;
+    padding: 1rem;
+
+    a {
+        @include paragraph;
+        color: white;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,71 @@
+.header__bg {
+    @include bg(#eee);
+    background-color: #4444ab;  //This is the slack blue
+    // background-color: #6d3edb;
+  }
+  
+  .header__container {
+    @include container;
+  }
+  
+  img.header__photo {
+    // padding-top: 1rem;
+    flex:1;
+    align-self: center;
+  }
+  
+  .header__h1 {
+    @include headline;
+    font-weight: 500;
+    color: rgba(#fff, 1);
+    font-size: 5rem;
+
+    @include for-phone-only {
+        font-size: 3rem;
+    }
+  }
+  
+  h3.header__lead {
+    @include paragraph;
+    font-weight: 300;
+    color: rgba(#fff, 1);
+    font-size: 1.6rem;
+    margin: 0.5rem 0rem 2rem;
+    line-height: 1.4;
+
+    @include for-phone-only {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+  }
+
+  button {
+    @include header-button(black, white, '');
+    text-align: center;
+    margin: 10px 1rem;   
+    cursor: pointer;
+    border: none;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+  }
+  
+  .header__p {
+    @include paragraph;
+    color: rgba(#fff, 1);
+    font-size: 1.2rem;
+  }
+  
+  
+  .animated {
+    animation-duration: 0.6s;
+    animation-delay: 0.5s;
+    transition: all .2s ease-in-out;
+  }
