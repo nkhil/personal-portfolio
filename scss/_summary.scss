@@ -58,38 +58,41 @@
   }
   
   .react::before {
-    @include icons('../img/react.png');
+    @include icons('/img/react.png');
   }
   
   .css3::before {
-    @include icons('../img/css3.png');
+    @include icons('/img/css3.png');
   }
   
   .css-flexbox::before {
-    @include icons('../img/css-flexbox.png');
+    @include icons('/img/css-flexbox.png');
   }
   
   .css-grid::before {
-    @include icons('../img/css-grid.png');
+    @include icons('/img/css-grid.png');
   }
   
   .sass::before {
-    @include icons ('../img/sass.png');
+    @include icons ('/img/sass.png');
   }
   
   .javascript::before {
-    @include icons ('../img/javascript.png');
+    @include icons ('/img/javascript.png');
   }
 
   .git::before {
-    @include icons ('../img/git.png');
+    @include icons ('/img/git.png');
   }
 
   .gulp::before {
-    @include icons ('../img/gulp.png');
+    @include icons ('/img/gulp.png');
   }
 
   .webpack::before {
-    @include icons ('../img/webpack.png');
+    @include icons ('/img/webpack.png');
   }
   
+  .ruby_on_rails::before {
+    @include icons ('/img/ruby_on_rails.png')
+  }
