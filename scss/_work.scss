@@ -67,9 +67,7 @@
       h3 {
         @include headline;
         font-size: 2rem;
-        margin-left: 1rem;
-        margin-bottom: 0;
-      
+        margin-left: 1rem;      
       }
       p {
         @include paragraph;

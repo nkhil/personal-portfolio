@@ -22,6 +22,7 @@
 
     @include for-phone-only {
         font-size: 3rem;
+        margin-bottom: 0rem;
     }
   }
   
@@ -30,13 +31,17 @@
     font-weight: 300;
     color: rgba(#fff, 1);
     font-size: 1.6rem;
-    margin: 0.5rem 0rem 2rem;
+    margin: 1.5rem 0rem 1rem;
     line-height: 1.4;
 
     @include for-phone-only {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0.5rem;
     }
+  }
+
+  h3.margin_bottom {
+    margin-bottom: 2.5rem;
   }
 
   button {

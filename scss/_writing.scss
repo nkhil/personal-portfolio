@@ -2,6 +2,10 @@
     @include bg(#fff);
 }
 
+.blog-title {
+    margin: 20px;
+}
+
 .writing__container {
     @include container;
     margin-bottom: 5rem;

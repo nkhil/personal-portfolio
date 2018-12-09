@@ -37,20 +37,38 @@
         justify-content: center;
     }
 
-    button {
-        @include grid-button(#4444ab, black, '');
+    // button {
+    //     @include grid-button(#4444ab, white, '');
+    //     text-align: center;
+    //     margin: 2rem 1rem;   
+    //     cursor: pointer;
+    //     border: none;
+    //     display: inline-block;
+    
+    //     a {
+    //         color: white;
+    //         text-decoration: none;
+    
+    //         &:hover {
+    //             color: black;
+    //             text-decoration: none;
+    //         }
+    //     }
+    //   }
+
+      button {
+        @include header-button(#4444ab, white, '');
         text-align: center;
         margin: 2rem 1rem;   
         cursor: pointer;
         border: none;
-        display: inline-block;
     
         a {
-            color: black;
+            color: white;
             text-decoration: none;
     
             &:hover {
-                color: black;
+                color: white;
                 text-decoration: none;
             }
         }
