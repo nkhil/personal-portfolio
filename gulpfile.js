@@ -23,9 +23,6 @@ gulp.task('sass', function () {
 
 gulp.task('minify', () => {
     return gulp.src('./*.html')
-    .pipe(htmlreplace({
-        'css': './css/style.css'
-    }))
     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest('dist'));
 });
